@@ -1,0 +1,121 @@
+/* Default styles */
+body {
+  padding: 0 20px;
+  background-color: #fff;
+  color: #000;
+}
+
+table {
+  background-color: #fff;
+}
+
+td {
+  background-color: #fff;
+}
+
+/* Dark mode styles */
+body.dark {
+  padding: 0 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+table.dark {
+  background-color: #333;
+}
+
+td.dark {
+  background-color: #333;
+}
+#dark-mode-button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #0048ba;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+  margin-bottom: 35px;
+}
+/* animation dark mode */
+/* Add animation keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Add animation properties */
+body.dark {
+  animation: fadeIn 0.5s ease-in;
+}
+table.dark {
+  animation: fadeIn 0.5s ease-in;
+}
+td.dark {
+  animation: fadeIn 0.5s ease-in;
+}
+
+#game {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+td {
+  border: 1px solid #ccc;
+  width: 150px;
+  height: 150px;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#reset-button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #0048ba;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* Add media queries to adjust the styling for different screen sizes */
+@media only screen and (max-width: 600px) {
+  /* Styles for screens smaller than 600px */
+  table {
+    width: 100%;
+  }
+  td {
+    width: 30%;
+  }
+}
+/* Add media queries to adjust the styling for different screen sizes */
+@media only screen and (max-width: 340px) {
+  /* Styles for screens smaller than 340px */
+  table {
+    width: 100%;
+    font-size: 12px;
+  }
+  td {
+    width: 30%;
+  }
+  #dark-mode-button,
+  #reset-button {
+    font-size: 12px;
+    padding: 5px;
+  }
+}
